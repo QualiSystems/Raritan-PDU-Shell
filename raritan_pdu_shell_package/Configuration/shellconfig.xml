@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ShellsConfiguration 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://schemas.qualisystems.com/ResourceManagement/ShellsConfigurationSchema.xsd">
+<ResourceTemplates>
+    <ResourceTemplate Name="Raritan PDU" Model="Raritan PDU" Driver="Raritan PDU Driver">
+        <Description>The Raritan PDU shell provides a management interface to power on and power off connected devices.</Description>
+        <AutoLoad Enable="true">
+            <Description>Discovers the device structure and populate its attributes.</Description>
+        </AutoLoad>
+        <Attributes>
+            <Attribute Name="SNMP Version" Value="" />
+            <Attribute Name="SNMP Read Community" Value="" />
+            <Attribute Name="SNMP Write Community" Value="" />
+            <Attribute Name="SNMP V3 User" Value="" />
+            <Attribute Name="SNMP V3 Password" Value="" />
+            <Attribute Name="SNMP V3 Private Key" Value="" />
+            <Attribute Name="CLI Connection Type" Value="Auto" />
+            <Attribute Name="User" Value="" />
+            <Attribute Name="Password" Value="" />
+			<Attribute Name="Sessions Concurrency Limit" Value="1" />
+            <Attribute Name="Firmware Version" Value=""/>
+            <Attribute Name="Model" Value="" />
+            <Attribute Name="Vendor" Value="" />
+        </Attributes>
+    </ResourceTemplate>
+</ResourceTemplates>
+</ShellsConfiguration>

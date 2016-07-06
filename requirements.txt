@@ -1,0 +1,6 @@
+cloudshell-snmp>=2.0,<2.1
+cloudshell-automation-api>=7.0,<7.1
+cloudshell-shell-core>=2.1, <2.2
+cloudshell-pdu-core>=1.0, <1.1
+inject==3.3.1
+nose
