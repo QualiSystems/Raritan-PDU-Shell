@@ -51,8 +51,13 @@ class RaritanHandler:
 
     def power_on(self, context, ports):
         rr = ConnectedToPduResource(context.remote_endpoints)
+        from debug_utils import debugger
+        debugger.attach_debugger()
+        result = True
         for o in self._get_outlets_by_address(ports):
             o.setPowerState(pdumodel.Outlet.PowerState.PS_ON)
+            result = o.getState()
+            print result
         return rr.online()
 
     def power_off(self, context, ports):
