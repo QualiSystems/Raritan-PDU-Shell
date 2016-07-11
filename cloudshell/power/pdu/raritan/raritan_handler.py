@@ -3,7 +3,7 @@ import time
 from cloudshell.power.pdu.managed_devices.connected_to_pdu_resource import ConnectedToPduResource
 from cloudshell.power.pdu.raritan.device.raritan_rpcapi_pdu_factory import RaritanRpcApiPduFactory
 from cloudshell.power.pdu.raritan.device.factory_context import FactoryContext
-from cloudshell.power.pdu.raritan.helper import get_outlets_by_address
+from cloudshell.power.pdu.raritan.shell_helper import get_outlets_by_address
 
 
 class RaritanHandler:
