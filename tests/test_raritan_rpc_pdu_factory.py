@@ -9,6 +9,7 @@ FW_VERSION = '3.1.0.5-42165'
 MANUFACTURER = 'Raritan'
 MODEL = 'PX3-5145R'
 
+
 class TestRaritanRpcApiPduFactory(unittest.TestCase):
 
     def setUp(self):
@@ -20,7 +21,7 @@ class TestRaritanRpcApiPduFactory(unittest.TestCase):
         outlets = [Mock(), Mock()]
         mock_getOutlets.return_value = outlets
         result = self.factory.get_outlets()
-        self.assertTrue(all([isinstance(outlet,RPCAPIOutlet) for outlet in result]))
+        self.assertTrue(all([isinstance(outlet, RPCAPIOutlet) for outlet in result]))
 
     @patch.object(Pdu, 'getOutlets')
     @patch.object(Pdu, 'getMetaData')
