@@ -214,6 +214,8 @@
         <AttributeValue Name="Firmware Version" Value="" />
         <AttributeValue Name="Model" Value="" />
         <AttributeValue Name="Vendor" Value="" />
+        <AttributeValue Name="Sessions Concurrency Limit" Value="1" />
+        <AttributeValue Name="CLI Connection Type" Value="Auto" />
       </AttributeValues>
       <Models>
         <ResourceModel Name="Raritan PDU" Description="" SupportsConcurrentCommands="true">
