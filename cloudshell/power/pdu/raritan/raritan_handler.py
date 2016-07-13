@@ -27,13 +27,13 @@ class RaritanHandler:
 
     def power_on(self, context, ports):
         rr = ConnectedToPduResource(context.remote_endpoints)
-        for o in get_outlets_by_address(ports):
+        for o in get_outlets_by_address(self.outlets, ports):
             o.power_on
         return rr.online()
 
     def power_off(self, context, ports):
         rr = ConnectedToPduResource(context.remote_endpoints)
-        for o in get_outlets_by_address(ports):
+        for o in get_outlets_by_address(self.outlets, ports):
             o.power_off
         return rr.offline()
 
