@@ -82,6 +82,23 @@
         <Rule Name="Available For Abstract Resources" />
       </Rules>
     </AttributeInfo>
+        <AttributeInfo Name="Sessions Concurrency Limit" Type="Numeric" DefaultValue="1" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo xsi:type="LookupAttributeDetails" Name="CLI Connection Type" Type="Lookup" DefaultValue="Auto" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+      </Rules>
+      <LookupValues>
+        <LookupValue NumericValue="0" StringValue="Auto" />
+        <LookupValue NumericValue="1" StringValue="Console" />
+        <LookupValue NumericValue="2" StringValue="SSH" />
+        <LookupValue NumericValue="3" StringValue="Telnet" />
+        <LookupValue NumericValue="4" StringValue="TCP" />
+      </LookupValues>
+    </AttributeInfo>
   </Attributes>
   <ResourceFamilies>
     <ResourceFamily Name="Power Socket" IsConnectable="true" IsLockedByDefault="true" Description="Sockets are devices that allow electrically operated equipment to be connected to the primary alternating current (AC) power supply." IsSearchable="true" ResourceType="Resource">
@@ -177,6 +194,12 @@
         <AttachedAttribute Name="Vendor" IsOverridable="true" IsLocal="true">
           <AllowedValues />
         </AttachedAttribute>
+        <AttachedAttribute Name="Sessions Concurrency Limit" IsOverridable="true" IsLocal="true">
+          <AllowedValues />
+        </AttachedAttribute>
+        <AttachedAttribute Name="CLI Connection Type" IsOverridable="true" IsLocal="true">
+          <AllowedValues />
+        </AttachedAttribute>
       </AttachedAttributes>
       <AttributeValues>
         <AttributeValue Name="User" Value="" />
@@ -193,7 +216,7 @@
         <AttributeValue Name="Vendor" Value="" />
       </AttributeValues>
       <Models>
-        <ResourceModel Name="Raritan PDU" Description="" SupportsConcurrentCommands="false">
+        <ResourceModel Name="Raritan PDU" Description="" SupportsConcurrentCommands="true">
           <AttachedAttributes>
             <AttachedAttribute Name="Password" IsOverridable="true" IsLocal="true">
               <AllowedValues />
