@@ -118,7 +118,11 @@
       <Categories />
     </ResourceFamily>
     <ResourceFamily Name="Power Port" IsConnectable="true" IsLockedByDefault="true" Description="" IsSearchable="true" ResourceType="Resource">
-      <AttachedAttributes>
+      <AttachedAttributes />
+		<AttributeValues />
+      <Models>
+        <ResourceModel Name="Generic Power Port" Description="" SupportsConcurrentCommands="false">
+          <AttachedAttributes>
         <AttachedAttribute Name="Model" IsOverridable="true" IsLocal="true">
           <AllowedValues />
         </AttachedAttribute>
@@ -138,15 +142,6 @@
         <AttributeValue Name="Version" Value="" />
         <AttributeValue Name="Port Description" Value="" />
       </AttributeValues>
-      <Models>
-        <ResourceModel Name="Generic Power Port" Description="" SupportsConcurrentCommands="false">
-          <AttachedAttributes />
-          <AttributeValues>
-            <AttributeValue Name="Model" Value="" />
-            <AttributeValue Name="Serial Number" Value="" />
-            <AttributeValue Name="Version" Value="" />
-            <AttributeValue Name="Port Description" Value="" />
-          </AttributeValues>
           <ParentModels>
             <ParentModelName>Generic Power Managed Resource</ParentModelName>
           </ParentModels>
