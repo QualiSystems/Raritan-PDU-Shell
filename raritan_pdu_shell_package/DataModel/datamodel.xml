@@ -70,10 +70,11 @@
         <Rule Name="Configuration" />
       </Rules>
     </AttributeInfo>
-    <AttributeInfo Name="Firmware Version" Type="String" DefaultValue="" IsReadOnly="true">
+    <AttributeInfo Name="Firmware Version" Type="String" DefaultValue="" IsReadOnly="false">
       <Rules>
         <Rule Name="Configuration" />
         <Rule Name="Setting" />
+        <Rule Name="Admin Only" />
       </Rules>
     </AttributeInfo>
     <AttributeInfo Name="Vendor" Type="String" DefaultValue="" IsReadOnly="true">

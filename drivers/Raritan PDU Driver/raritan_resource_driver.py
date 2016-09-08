@@ -54,4 +54,4 @@ class RaritanDriver(ResourceDriverInterface):
         """
         :type context: cloudshell.shell.core.driver_context.ResourceRemoteCommandContext
         """
-        return self.handler.power_cycle(context, ports)
+        return self.handler.power_cycle(context, ports, float(delay))

@@ -45,7 +45,6 @@ class RaritanDriver(ResourceDriverInterface, PowerResourceDriverInterface):
         """
         return self.handler.power_on(context, ports)
 
-
     @context_from_args
     def PowerOff(self, context, ports):
         """ Powers off outlets on the managed PDU
