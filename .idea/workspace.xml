@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60db2eab-cf29-4bc5-845b-ef221ba9808a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/raritan_pdu_shell_package/DataModel/datamodel.xml" afterPath="$PROJECT_DIR$/raritan_pdu_shell_package/DataModel/datamodel.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cloudshell-power-pdu-raritan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datamodel.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="datamodel.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/raritan_pdu_shell_package/DataModel/datamodel.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.05086705">
+            <state vertical-scroll-proportion="1.4193548">
               <caret line="79" column="80" selection-start-line="79" selection-start-column="80" selection-end-line="79" selection-end-column="80" />
               <folding />
             </state>
@@ -65,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.213483">
-              <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.71552974">
+              <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -202,8 +203,8 @@
         <option value="$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/drivermetadata.xml" />
         <option value="$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_handler.py" />
         <option value="$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_handler.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/raritan_pdu_shell_package/DataModel/datamodel.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1309,18 +1310,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/raritan_pdu_shell_package/DataModel/datamodel.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.213483">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        <state vertical-scroll-proportion="1.4193548">
+          <caret line="79" column="80" selection-start-line="79" selection-start-column="80" selection-end-line="79" selection-end-column="80" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/raritan_pdu_shell_package/DataModel/datamodel.xml">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.05086705">
-          <caret line="79" column="80" selection-start-line="79" selection-start-column="80" selection-end-line="79" selection-end-column="80" />
+        <state vertical-scroll-proportion="0.71552974">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
           <folding />
         </state>
       </provider>
