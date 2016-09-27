@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60db2eab-cf29-4bc5-845b-ef221ba9808a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/raritan_pdu_shell_package/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Resource Drivers - Python/Raritan PDU Driver/drivermetadata.xml" afterPath="$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/drivermetadata.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Resource Drivers - Python/Raritan PDU Driver/raritan_resource_driver.py" afterPath="$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/raritan_resource_driver.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Resource Drivers - Python/Raritan PDU Driver/requirements.txt" afterPath="$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/requirements.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/raritan_pdu_shell_package/raritan_pdu_shell_package.zip" afterPath="" />
     </list>
     <ignored path="cloudshell-power-pdu-raritan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -292,24 +287,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="raritan_pdu_shell_package" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudshell-pdu-raritan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudshell-pdu-raritan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raritan_pdu_shell_package" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resource Drivers - Python" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
