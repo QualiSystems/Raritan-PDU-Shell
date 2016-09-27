@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60db2eab-cf29-4bc5-845b-ef221ba9808a" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/drivers/Raritan PDU Driver/drivermetadata.xml" afterPath="$PROJECT_DIR$/Resource Drivers - Python/Raritan PDU Driver/drivermetadata.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/drivers/Raritan PDU Driver/raritan_resource_driver.py" afterPath="$PROJECT_DIR$/Resource Drivers - Python/Raritan PDU Driver/raritan_resource_driver.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/drivers/Raritan PDU Driver/requirements.txt" afterPath="$PROJECT_DIR$/Resource Drivers - Python/Raritan PDU Driver/requirements.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/raritan_pdu_shell_package/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Resource Drivers - Python/Raritan PDU Driver/drivermetadata.xml" afterPath="$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/drivermetadata.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Resource Drivers - Python/Raritan PDU Driver/raritan_resource_driver.py" afterPath="$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/raritan_resource_driver.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Resource Drivers - Python/Raritan PDU Driver/requirements.txt" afterPath="$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cloudshell-power-pdu-raritan.iws" />
@@ -58,18 +62,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shellconfig.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="shellconfig.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/raritan_pdu_shell_package/Configuration/shellconfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7660167">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="raritan_resource_driver.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resource Drivers - Python/Raritan PDU Driver/raritan_resource_driver.py">
+        <entry file="file://$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/raritan_resource_driver.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
@@ -94,20 +108,10 @@
         </entry>
       </file>
       <file leaf-file-name="drivermetadata.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resource Drivers - Python/Raritan PDU Driver/drivermetadata.xml">
+        <entry file="file://$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/drivermetadata.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -124,7 +128,7 @@
         </entry>
       </file>
       <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resource Drivers - Python/Raritan PDU Driver/requirements.txt">
+        <entry file="file://$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
@@ -205,6 +209,7 @@
         <option value="$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_resource_driver.py" />
         <option value="$PROJECT_DIR$/drivers/Raritan PDU Driver/raritan_resource_driver.py" />
         <option value="$PROJECT_DIR$/raritan_pdu_shell_package/DataModel/datamodel.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -322,6 +327,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Resource Drivers - Python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Raritan PDU Driver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloudshell-pdu-raritan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloudshell-pdu-raritan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="raritan_pdu_shell_package" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="DataModel" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -358,24 +385,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudshell-pdu-raritan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloudshell-pdu-raritan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resource Drivers - Python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Raritan PDU Driver" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -391,15 +400,16 @@
     <property name="SearchEverywhereHistoryKey" value="powercycle&#9;null&#9;null&#10;ResourceRemote&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\work\git\cloudshell-pdu-raritan\raritan_pdu_shell_package\Resource Drivers - Python" />
+      <recent name="C:\work\git\cloudshell-power-pdu-raritan\raritan" />
+      <recent name="C:\work\git\cloudshell-power-pdu-raritan\cloudshell\power\pdu\mibs" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\work\git\cloudshell-pdu-raritan\cloudshell\power\pdu\raritan\api" />
       <recent name="C:\work\git\cloudshell-power-pdu-raritan\raritan" />
       <recent name="C:\work\git\cloudshell-power-pdu-raritan\cloudshell\power\pdu\raritan\rpc" />
       <recent name="C:\work\git\cloudshell-power-pdu-raritan\cloudshell\power\pdu\raritan" />
-      <recent name="C:\work\git\cloudshell-power-pdu-raritan\cloudshell\power\pdu\mibs" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\work\git\cloudshell-power-pdu-raritan\raritan" />
       <recent name="C:\work\git\cloudshell-power-pdu-raritan\cloudshell\power\pdu\mibs" />
     </key>
   </component>
@@ -925,13 +935,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../7.0/Drop/TestShell/ExecutionServer/python/2.7.10/Lib/site-packages/cloudshell/snmp/quali_snmp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="186" column="8" selection-start-line="186" selection-start-column="8" selection-end-line="186" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../7.0/Drop/TestShell/ExecutionServer/python/2.7.10/Lib/site-packages/cloudshell/configuration/cloudshell_snmp_configuration.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1232,7 +1235,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resource Drivers - Python/Raritan PDU Driver/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
@@ -1269,7 +1272,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resource Drivers - Python/Raritan PDU Driver/drivermetadata.xml">
+    <entry file="file://$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/drivermetadata.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1277,7 +1280,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resource Drivers - Python/Raritan PDU Driver/raritan_resource_driver.py">
+    <entry file="file://$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/raritan_resource_driver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
@@ -1299,6 +1302,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7660167">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
