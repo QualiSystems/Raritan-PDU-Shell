@@ -21,6 +21,7 @@ class RaritanHandler:
         return self._outlets
 
     def initialize(self, context):
+        debugger.attach_debugger()
         factory_context = FactoryContext(context)
         self.pdu = self._pdu_factory(factory_context)
 
