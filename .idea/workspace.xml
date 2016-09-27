@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60db2eab-cf29-4bc5-845b-ef221ba9808a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_handler.py" afterPath="$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_handler.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/requirements.txt" afterPath="$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/requirements.txt" />
     </list>
     <ignored path="cloudshell-power-pdu-raritan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,10 +87,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="raritan_handler.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="raritan_handler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_handler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4556962">
+            <state vertical-scroll-proportion="-14.666667">
               <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -120,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.09821428">
+              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -204,6 +204,7 @@
         <option value="$PROJECT_DIR$/raritan_pdu_shell_package/DataModel/datamodel.xml" />
         <option value="$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_handler.py" />
         <option value="$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_handler.py" />
+        <option value="$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/requirements.txt" />
       </list>
     </option>
   </component>
@@ -1246,14 +1247,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_resource_driver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1316,12 +1309,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_handler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4556962">
+        <state vertical-scroll-proportion="-14.666667">
           <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <element signature="e#622#723#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09821428">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
