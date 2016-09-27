@@ -30,7 +30,7 @@
         <Rule Name="Configuration" />
       </Rules>
     </AttributeInfo>
-    <AttributeInfo Name="Password" Type="Password" DefaultValue="3M3u7nkDzxWb0aJ/IZYeWw==" IsReadOnly="false">
+    <AttributeInfo Name="Password" Type="Password" DefaultValue="" IsReadOnly="false">
       <Rules>
         <Rule Name="Configuration" />
       </Rules>
@@ -199,7 +199,7 @@
       </AttachedAttributes>
       <AttributeValues>
         <AttributeValue Name="User" Value="" />
-        <AttributeValue Name="Password" Value="raritan" />
+        <AttributeValue Name="Password" Value="" />
         <AttributeValue Name="SNMP Port" Value="161" />
         <AttributeValue Name="SNMP Read Community" Value="" />
         <AttributeValue Name="SNMP V3 Password" Value="" />
@@ -227,7 +227,7 @@
             </AttachedAttribute>
           </AttachedAttributes>
           <AttributeValues>
-            <AttributeValue Name="Password" Value="AY/mFGg7SGa5NSjbcv3sDw==" />
+            <AttributeValue Name="Password" Value="raritan" />
             <AttributeValue Name="User" Value="admin" />
             <AttributeValue Name="SNMP Read Community" Value="public" />
             <AttributeValue Name="SNMP Port" Value="161" />
