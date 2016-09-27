@@ -5,6 +5,8 @@ from cloudshell.power.pdu.raritan.device.raritan_rpcapi_pdu_factory import Rarit
 from cloudshell.power.pdu.raritan.device.factory_context import FactoryContext
 from cloudshell.power.pdu.raritan.shell_helper import get_outlets_by_address
 
+from debug_utils import debugger
+
 
 class RaritanHandler:
     def __init__(self, pdu_factory=RaritanRpcApiPduFactory):
@@ -23,6 +25,7 @@ class RaritanHandler:
         self.pdu = self._pdu_factory(factory_context)
 
     def get_inventory(self, context):
+        debugger.attach_debugger()
         return self.pdu.get_inventory()
 
     def power_on(self, context, ports):
