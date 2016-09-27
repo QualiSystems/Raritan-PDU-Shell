@@ -7,19 +7,19 @@
         <Rule Name="Available For Abstract Resources" />
       </Rules>
     </AttributeInfo>
-    <AttributeInfo Name="Serial Number" Type="String" DefaultValue="" IsReadOnly="true">
+    <AttributeInfo Name="Serial Number" Type="String" DefaultValue="" IsReadOnly="false">
       <Rules>
         <Rule Name="Setting" />
         <Rule Name="Available For Abstract Resources" />
       </Rules>
     </AttributeInfo>
-    <AttributeInfo Name="Version" Type="String" DefaultValue="" IsReadOnly="true">
+    <AttributeInfo Name="Version" Type="String" DefaultValue="" IsReadOnly="false">
       <Rules>
         <Rule Name="Setting" />
         <Rule Name="Available For Abstract Resources" />
       </Rules>
     </AttributeInfo>
-    <AttributeInfo Name="Port Description" Type="String" DefaultValue="" IsReadOnly="true">
+    <AttributeInfo Name="Port Description" Type="String" DefaultValue="" IsReadOnly="false">
       <Rules>
         <Rule Name="Setting" />
         <Rule Name="Available For Abstract Resources" />
@@ -77,7 +77,7 @@
         <Rule Name="Admin Only" />
       </Rules>
     </AttributeInfo>
-    <AttributeInfo Name="Vendor" Type="String" DefaultValue="" IsReadOnly="true">
+    <AttributeInfo Name="Vendor" Type="String" DefaultValue="" IsReadOnly="false">
       <Rules>
         <Rule Name="Setting" />
         <Rule Name="Available For Abstract Resources" />

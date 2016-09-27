@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60db2eab-cf29-4bc5-845b-ef221ba9808a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/raritan_pdu_shell_package/DataModel/datamodel.xml" afterPath="$PROJECT_DIR$/raritan_pdu_shell_package/DataModel/datamodel.xml" />
     </list>
     <ignored path="cloudshell-power-pdu-raritan.iws" />
@@ -50,8 +48,8 @@
       <file leaf-file-name="datamodel.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/raritan_pdu_shell_package/DataModel/datamodel.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07630058">
-              <caret line="3" column="79" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
+            <state vertical-scroll-proportion="-0.05086705">
+              <caret line="79" column="80" selection-start-line="79" selection-start-column="80" selection-end-line="79" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -204,8 +202,8 @@
         <option value="$PROJECT_DIR$/raritan_pdu_shell_package/Resource Drivers - Python/Raritan PDU Driver/drivermetadata.xml" />
         <option value="$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_handler.py" />
         <option value="$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_handler.py" />
-        <option value="$PROJECT_DIR$/raritan_pdu_shell_package/DataModel/datamodel.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/raritan_pdu_shell_package/DataModel/datamodel.xml" />
       </list>
     </option>
   </component>
@@ -1321,8 +1319,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/raritan_pdu_shell_package/DataModel/datamodel.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07630058">
-          <caret line="3" column="79" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
+        <state vertical-scroll-proportion="-0.05086705">
+          <caret line="79" column="80" selection-start-line="79" selection-start-column="80" selection-end-line="79" selection-end-column="80" />
           <folding />
         </state>
       </provider>
