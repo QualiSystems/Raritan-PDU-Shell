@@ -13,7 +13,7 @@
 
     <Command Name="PowerCycle" DisplayName="Power Cycle" Tags="power" Description="Power off, then power on device">
       <Parameters>
-        <Parameter Name="delay" DisplayName="Delay" Type="String" Mandatory="False" DefaultValue="-1"/>
+        <Parameter Name="delay" DisplayName="Delay" Type="String" Mandatory="False" DefaultValue="0"/>
       </Parameters>
     </Command>	
 

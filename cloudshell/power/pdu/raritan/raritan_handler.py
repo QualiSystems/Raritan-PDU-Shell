@@ -38,83 +38,23 @@ class RaritanHandler:
         return rr.offline()
 
     def power_cycle(self, context, ports, delay=0):
-        if delay < 0:
-            delay = 0
+        self._validate_power_cycle_delay(delay)
         self.power_off(context, ports)
         time.sleep(delay)
         self.power_on(context, ports)
         return 'Power cycle complete'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    # SNMP legacy code
-    #
-    # import os
-    # from cloudshell.configuration.cloudshell_snmp_configuration import SNMP_HANDLER
-    #
-    # @property
-    # def snmp(self):
-    #     if self._snmp is None:
-    #         self._snmp = SNMP_HANDLER()
-    #         path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'mibs'))
-    #         self._snmp.update_mib_sources(path)
-    #     return self._snmp
-    #
-    # def _autoload_resources_by_snmp(self):
-    #     outlets = self._get_outlets()
-    #     resources = [AutoLoadResource('Generic Socket',
-    #                                   'Socket ' + outlets[outlet]['outletLabel'],
-    #                                   outlets[outlet]['outletLabel'])
-    #                  for outlet in self.outlets]
-    #     return resources
-    #
-    # def _get_outlets(self):
-    #     return self.snmp.get_table('PDU2-MIB', 'outletConfigurationTable')
+    @staticmethod
+    def _validate_power_cycle_delay(delay):
+        try:
+            int(delay)
+            if delay < 0:
+                raise ValueError('Must be non negative integer')
+        except ValueError:
+            raise Exception('Delay represents the seconds between power off and power on. \n'
+                            'You ran the power cycle command with a delay argument of {0}, '
+                            'but acceptable values are empty,'
+                            '0, or a positive integer value')
 
 
 
