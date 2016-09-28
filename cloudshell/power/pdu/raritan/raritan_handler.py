@@ -54,7 +54,7 @@ class RaritanHandler:
         try:
             float(delay)
             if delay < 0:
-                raise ValueError('Must be non negative integer')
+                raise ValueError('Must be non negative number')
         except ValueError:
             raise Exception('Delay represents the seconds between power off and power on. \n'
                             'You ran the power cycle command with a delay argument of {0}, '
