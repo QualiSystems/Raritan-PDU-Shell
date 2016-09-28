@@ -17,8 +17,8 @@ xmlns="http://schemas.qualisystems.com/ResourceManagement/ShellsConfigurationSch
             <Attribute Name="SNMP V3 Password" Value="" />
             <Attribute Name="SNMP V3 Private Key" Value="" />
             <Attribute Name="CLI Connection Type" Value="Auto" />-->
-            <Attribute Name="User" Value="admin" />
-            <Attribute Name="Password" Value="AY/mFGg7SGa5NSjbcv3sDw==" />
+            <Attribute Name="User" Value="" />
+            <Attribute Name="Password" Value="" />
 			<!--<Attribute Name="Sessions Concurrency Limit" Value="1" />
             <Attribute Name="Firmware Version" Value=""/>
             <Attribute Name="Model" Value="" />
