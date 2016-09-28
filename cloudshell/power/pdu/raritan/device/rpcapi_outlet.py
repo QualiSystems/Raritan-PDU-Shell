@@ -2,7 +2,6 @@ from threading import Lock
 
 from raritan.rpc import pdumodel
 from cloudshell.power.pdu.device.outlet import Outlet
-from debug_utils import debugger
 
 
 POWERED_ON = pdumodel.Outlet.PowerState.PS_ON
