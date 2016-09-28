@@ -4,7 +4,6 @@
     <list default="true" id="60db2eab-cf29-4bc5-845b-ef221ba9808a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloudshell/power/pdu/raritan/device/raritan_rpcapi_pdu_factory.py" afterPath="$PROJECT_DIR$/cloudshell/power/pdu/raritan/device/raritan_rpcapi_pdu_factory.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_handler.py" afterPath="$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_handler.py" />
     </list>
     <ignored path="cloudshell-power-pdu-raritan.iws" />
@@ -39,8 +38,8 @@
       <file leaf-file-name="raritan_handler.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_handler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27304965">
-              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.70212764">
+              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -71,8 +70,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3426967">
-              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            <state vertical-scroll-proportion="-1.4662921">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -160,8 +159,8 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/raritan_pdu_shell_package/Configuration/shellconfig.xml" />
         <option value="$PROJECT_DIR$/raritan_pdu_shell_package/DataModel/datamodel.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/cloudshell/power/pdu/raritan/device/raritan_rpcapi_pdu_factory.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_handler.py" />
         <option value="$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_handler.py" />
       </list>
@@ -1077,14 +1076,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3426967">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloudshell/power/pdu/raritan/device/raritan_rpcapi_pdu_factory.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0141844">
@@ -1092,14 +1083,6 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../7.0/Drop/TestShell/ExecutionServer/python/2.7.10/Lib/site-packages/cloudshell_pdu_core-1.0.0-py2.7.egg/cloudshell/power/pdu/managed_devices/connected_to_pdu_resource.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1119,10 +1102,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4662921">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../7.0/Drop/TestShell/ExecutionServer/python/2.7.10/Lib/site-packages/cloudshell_pdu_core-1.0.0-py2.7.egg/cloudshell/power/pdu/managed_devices/connected_to_pdu_resource.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cloudshell/power/pdu/raritan/raritan_handler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27304965">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.70212764">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
