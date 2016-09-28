@@ -1,5 +1,5 @@
 from raritan import rpc
-from raritan.rpc import pdumodel
+from raritan.rpc import pdumodel, HttpException
 
 from cloudshell.shell.core.driver_context import AutoLoadDetails, AutoLoadResource, AutoLoadAttribute
 from cloudshell.power.pdu.raritan.device.rpcapi_outlet import RPCAPIOutlet
@@ -15,7 +15,15 @@ class RaritanRpcApiPduFactory(PDUFactory):
         return [RPCAPIOutlet(x) for x in self._pdu_handler.getOutlets()]
 
     def get_inventory(self):
-        metadata = self._pdu_handler.getMetaData()
+        try:
+            metadata = self._pdu_handler.getMetaData()
+        except HttpException as e:
+            if 'unauthorized' in e.message:
+                error_msg = 'User is unauthorized to access PDU with supplied password'
+            else:
+                error_msg = 'Unable to access PDU. Check if PDU address is valid.'
+            raise Exception(error_msg)
+
         resources = self._autoload_resources_by_rpc()
         attributes = [AutoLoadAttribute('', 'Firmware Version', metadata.fwRevision),
                       AutoLoadAttribute('', 'Vendor', metadata.nameplate.manufacturer),
