@@ -52,14 +52,14 @@ class RaritanHandler:
     @staticmethod
     def _validate_power_cycle_delay(delay):
         try:
-            int(delay)
+            float(delay)
             if delay < 0:
                 raise ValueError('Must be non negative integer')
         except ValueError:
             raise Exception('Delay represents the seconds between power off and power on. \n'
                             'You ran the power cycle command with a delay argument of {0}, '
                             'but acceptable values are empty,'
-                            '0, or a positive integer value')
+                            '0, or a positive numeric value')
 
 
 

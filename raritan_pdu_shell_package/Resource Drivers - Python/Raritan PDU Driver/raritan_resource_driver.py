@@ -41,7 +41,6 @@ class RaritanDriver(ResourceDriverInterface):
         """
         return self.handler.power_on(context, ports)
 
-
     @context_from_args
     def PowerOff(self, context, ports):
         """
@@ -54,4 +53,8 @@ class RaritanDriver(ResourceDriverInterface):
         """
         :type context: cloudshell.shell.core.driver_context.ResourceRemoteCommandContext
         """
+        try:
+            float(delay)
+        except ValueError:
+            raise Exception('Delay must be empty or have a numeric value')
         return self.handler.power_cycle(context, ports, float(delay))
