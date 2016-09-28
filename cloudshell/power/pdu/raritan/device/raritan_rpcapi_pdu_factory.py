@@ -8,15 +8,20 @@ from cloudshell.power.pdu.device.pdu_factory import PDUFactory
 
 class RaritanRpcApiPduFactory(PDUFactory):
     def __init__(self, context):
-        self._agent = rpc.Agent("https", context.host, context.user, context.password)
-        self._pdu_handler = pdumodel.Pdu('model/pdu/0', self._agent)
+        self._context = context
 
     def get_outlets(self):
-        return [RPCAPIOutlet(x) for x in self._pdu_handler.getOutlets()]
+        handler = self._get_handler()
+        return [RPCAPIOutlet(x) for x in handler.getOutlets()]
+
+    def _get_handler(self):
+        agent = rpc.Agent("https", self._context.host, self._context.user, self._context.password)
+        return pdumodel.Pdu('model/pdu/0', agent)
 
     def get_inventory(self):
+        handler = self._get_handler()
         try:
-            metadata = self._pdu_handler.getMetaData()
+            metadata = handler.getMetaData()
         except HttpException as e:
             if 'unauthorized' in e.message.lower():
                 error_msg = 'User is unauthorized to access PDU. Check if username and or password valid'
