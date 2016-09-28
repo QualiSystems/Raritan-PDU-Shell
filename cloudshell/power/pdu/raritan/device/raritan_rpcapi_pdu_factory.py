@@ -18,7 +18,7 @@ class RaritanRpcApiPduFactory(PDUFactory):
         try:
             metadata = self._pdu_handler.getMetaData()
         except HttpException as e:
-            if 'unauthorized' in e.message:
+            if 'unauthorized' in e.message.lower():
                 error_msg = 'User is unauthorized to access PDU with supplied password'
             else:
                 error_msg = 'Unable to access PDU. Check if PDU address is valid.'
