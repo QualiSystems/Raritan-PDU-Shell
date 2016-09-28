@@ -54,6 +54,7 @@ class RaritanDriver(ResourceDriverInterface):
         :type context: cloudshell.shell.core.driver_context.ResourceRemoteCommandContext
         """
         try:
+            delay = 0 if delay == '' else delay
             float(delay)
         except ValueError:
             raise Exception('Delay must be empty or have a numeric value')
