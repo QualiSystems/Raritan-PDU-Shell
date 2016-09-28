@@ -16,7 +16,7 @@ class RaritanHandler:
     def outlets(self):
         return self.pdu.get_outlets()
 
-    def initialize(self):
+    def initialize(self, context):
         pass
 
     def initialize_pdu(self, context):
