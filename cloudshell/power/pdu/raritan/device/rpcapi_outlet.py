@@ -2,6 +2,11 @@ from threading import Lock
 
 from raritan.rpc import pdumodel
 from cloudshell.power.pdu.device.outlet import Outlet
+from debug_utils import debugger
+
+
+POWERED_ON = pdumodel.Outlet.PowerState.PS_ON
+POWERED_OFF = pdumodel.Outlet.PowerState.PS_OFF
 
 
 class RPCAPIOutlet(Outlet):
@@ -10,16 +15,16 @@ class RPCAPIOutlet(Outlet):
         self.lock = Lock()
 
     def power_on(self):
+        debugger.attach_debugger()
         with self.lock:
             self._handler.setPowerState(POWERED_ON)
             if self._handler.getState().powerState != POWERED_ON:
                 Exception('Ports were not powered on')
 
     def power_off(self):
+        debugger.attach_debugger()
         with self.lock:
             self._handler.setPowerState(POWERED_OFF)
             if self._handler.getState().powerState != POWERED_OFF:
                 Exception('Ports were not powered off')
 
-POWERED_ON = pdumodel.Outlet.PowerState.PS_ON
-POWERED_OFF = pdumodel.Outlet.PowerState.PS_OFF
