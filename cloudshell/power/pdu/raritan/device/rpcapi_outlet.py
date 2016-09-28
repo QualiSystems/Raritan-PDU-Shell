@@ -15,14 +15,12 @@ class RPCAPIOutlet(Outlet):
         self.lock = Lock()
 
     def power_on(self):
-        debugger.attach_debugger()
         with self.lock:
             self._handler.setPowerState(POWERED_ON)
             if self._handler.getState().powerState != POWERED_ON:
                 Exception('Ports were not powered on')
 
     def power_off(self):
-        debugger.attach_debugger()
         with self.lock:
             self._handler.setPowerState(POWERED_OFF)
             if self._handler.getState().powerState != POWERED_OFF:
