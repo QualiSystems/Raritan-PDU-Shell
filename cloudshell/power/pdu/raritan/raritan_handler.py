@@ -4,7 +4,6 @@ from cloudshell.power.pdu.managed_devices.connected_to_pdu_resource import Conne
 from cloudshell.power.pdu.raritan.device.raritan_rpcapi_pdu_factory import RaritanRpcApiPduFactory
 from cloudshell.power.pdu.raritan.device.factory_context import FactoryContext
 from cloudshell.power.pdu.raritan.shell_helper import get_outlets_by_address
-from debug_utils import debugger
 
 
 class RaritanHandler:
@@ -15,9 +14,7 @@ class RaritanHandler:
 
     @property
     def outlets(self):
-        if not self._outlets:
-            self._outlets = self.pdu.get_outlets()
-        return self._outlets
+        return self.pdu.get_outlets()
 
     def initialize(self, context):
         factory_context = FactoryContext(context)
@@ -28,7 +25,6 @@ class RaritanHandler:
         return self.pdu.get_inventory()
 
     def power_on(self, context, ports):
-        debugger.attach_debugger()
         self.initialize(context)
         rr = ConnectedToPduResource(context.remote_endpoints)
         for o in get_outlets_by_address(self.outlets, ports):
