@@ -23,21 +23,25 @@ class RaritanHandler:
         self.pdu = self._pdu_factory(factory_context)
 
     def get_inventory(self, context):
+        self.initialize(context)
         return self.pdu.get_inventory()
 
     def power_on(self, context, ports):
+        self.initialize(context)
         rr = ConnectedToPduResource(context.remote_endpoints)
         for o in get_outlets_by_address(self.outlets, ports):
             o.power_on
         return rr.online()
 
     def power_off(self, context, ports):
+        self.initialize(context)
         rr = ConnectedToPduResource(context.remote_endpoints)
         for o in get_outlets_by_address(self.outlets, ports):
             o.power_off
         return rr.offline()
 
     def power_cycle(self, context, ports, delay=0):
+        self.initialize(context)
         self._validate_power_cycle_delay(delay)
         self.power_off(context, ports)
         time.sleep(delay)
