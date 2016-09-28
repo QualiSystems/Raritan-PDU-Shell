@@ -227,8 +227,8 @@
             </AttachedAttribute>
           </AttachedAttributes>
           <AttributeValues>
-            <AttributeValue Name="Password" Value="AY/mFGg7SGa5NSjbcv3sDw==" />
-            <AttributeValue Name="User" Value="admin" />
+            <AttributeValue Name="Password" Value="" />
+            <AttributeValue Name="User" Value="" />
             <AttributeValue Name="SNMP Read Community" Value="public" />
             <AttributeValue Name="SNMP Port" Value="161" />
             <AttributeValue Name="SNMP V3 Password" Value="" />
