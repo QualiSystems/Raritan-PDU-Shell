@@ -24,6 +24,11 @@ var/
 .installed.cfg
 *.egg
 
+# Archives
+*.zip
+spike.bat
+.idea/workspace.xml
+
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.

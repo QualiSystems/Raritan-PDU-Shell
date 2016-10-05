@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Driver Name="Raritan PDU Driver" Version="1.0.0" MainClass="raritan_resource_driver.RaritanDriver" Description="Manages Raritan PDUs">
+  <Layout>
+
+    <Command Name="get_inventory" DisplayName="Autoload" Tags="" Description="Import device into Cloudshell">
+    </Command>
+
+    <Command Name="PowerOn" DisplayName="Power On" Tags="power" Description="Power on device">
+    </Command>
+
+    <Command Name="PowerOff" DisplayName="Power Off" Tags="power" Description="Power off device">
+    </Command>
+
+    <Command Name="PowerCycle" DisplayName="Power Cycle" Tags="power" Description="Power off, then power on device">
+      <Parameters>
+        <Parameter Name="delay" DisplayName="Delay" Type="String" Mandatory="False" DefaultValue="0"/>
+      </Parameters>
+    </Command>	
+
+  </Layout>
+</Driver>

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DataModelInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.qualisystems.com/ResourceManagement/DataModelSchema.xsd">
   <Attributes>
-    <AttributeInfo Name="Model" Type="String" DefaultValue="" IsReadOnly="true">
+    <AttributeInfo Name="Model" Type="String" DefaultValue="" IsReadOnly="false">
       <Rules>
         <Rule Name="Setting" />
         <Rule Name="Available For Abstract Resources" />
       </Rules>
     </AttributeInfo>
-    <AttributeInfo Name="Serial Number" Type="String" DefaultValue="" IsReadOnly="true">
+    <AttributeInfo Name="Serial Number" Type="String" DefaultValue="" IsReadOnly="false">
       <Rules>
         <Rule Name="Setting" />
         <Rule Name="Available For Abstract Resources" />
       </Rules>
     </AttributeInfo>
-    <AttributeInfo Name="Version" Type="String" DefaultValue="" IsReadOnly="true">
+    <AttributeInfo Name="Version" Type="String" DefaultValue="" IsReadOnly="false">
       <Rules>
         <Rule Name="Setting" />
         <Rule Name="Available For Abstract Resources" />
       </Rules>
     </AttributeInfo>
-    <AttributeInfo Name="Port Description" Type="String" DefaultValue="" IsReadOnly="true">
+    <AttributeInfo Name="Port Description" Type="String" DefaultValue="" IsReadOnly="false">
       <Rules>
         <Rule Name="Setting" />
         <Rule Name="Available For Abstract Resources" />
@@ -30,7 +30,7 @@
         <Rule Name="Configuration" />
       </Rules>
     </AttributeInfo>
-    <AttributeInfo Name="Password" Type="Password" DefaultValue="3M3u7nkDzxWb0aJ/IZYeWw==" IsReadOnly="false">
+    <AttributeInfo Name="Password" Type="Password" DefaultValue="" IsReadOnly="false">
       <Rules>
         <Rule Name="Configuration" />
       </Rules>
@@ -70,17 +70,35 @@
         <Rule Name="Configuration" />
       </Rules>
     </AttributeInfo>
-    <AttributeInfo Name="Firmware Version" Type="String" DefaultValue="" IsReadOnly="true">
+    <AttributeInfo Name="Firmware Version" Type="String" DefaultValue="" IsReadOnly="false">
       <Rules>
         <Rule Name="Configuration" />
         <Rule Name="Setting" />
+        <Rule Name="Admin Only" />
       </Rules>
     </AttributeInfo>
-    <AttributeInfo Name="Vendor" Type="String" DefaultValue="" IsReadOnly="true">
+    <AttributeInfo Name="Vendor" Type="String" DefaultValue="" IsReadOnly="false">
       <Rules>
         <Rule Name="Setting" />
         <Rule Name="Available For Abstract Resources" />
       </Rules>
+    </AttributeInfo>
+        <AttributeInfo Name="Sessions Concurrency Limit" Type="Numeric" DefaultValue="1" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+      </Rules>
+    </AttributeInfo>
+    <AttributeInfo xsi:type="LookupAttributeDetails" Name="CLI Connection Type" Type="Lookup" DefaultValue="Auto" IsReadOnly="false">
+      <Rules>
+        <Rule Name="Configuration" />
+      </Rules>
+      <LookupValues>
+        <LookupValue NumericValue="0" StringValue="Auto" />
+        <LookupValue NumericValue="1" StringValue="Console" />
+        <LookupValue NumericValue="2" StringValue="SSH" />
+        <LookupValue NumericValue="3" StringValue="Telnet" />
+        <LookupValue NumericValue="4" StringValue="TCP" />
+      </LookupValues>
     </AttributeInfo>
   </Attributes>
   <ResourceFamilies>
@@ -101,7 +119,11 @@
       <Categories />
     </ResourceFamily>
     <ResourceFamily Name="Power Port" IsConnectable="true" IsLockedByDefault="true" Description="" IsSearchable="true" ResourceType="Resource">
-      <AttachedAttributes>
+      <AttachedAttributes />
+		<AttributeValues />
+      <Models>
+        <ResourceModel Name="Generic Power Port" Description="" SupportsConcurrentCommands="false">
+          <AttachedAttributes>
         <AttachedAttribute Name="Model" IsOverridable="true" IsLocal="true">
           <AllowedValues />
         </AttachedAttribute>
@@ -121,15 +143,6 @@
         <AttributeValue Name="Version" Value="" />
         <AttributeValue Name="Port Description" Value="" />
       </AttributeValues>
-      <Models>
-        <ResourceModel Name="Generic Power Port" Description="" SupportsConcurrentCommands="false">
-          <AttachedAttributes />
-          <AttributeValues>
-            <AttributeValue Name="Model" Value="" />
-            <AttributeValue Name="Serial Number" Value="" />
-            <AttributeValue Name="Version" Value="" />
-            <AttributeValue Name="Port Description" Value="" />
-          </AttributeValues>
           <ParentModels>
             <ParentModelName>Generic Power Managed Resource</ParentModelName>
           </ParentModels>
@@ -177,10 +190,16 @@
         <AttachedAttribute Name="Vendor" IsOverridable="true" IsLocal="true">
           <AllowedValues />
         </AttachedAttribute>
+        <AttachedAttribute Name="Sessions Concurrency Limit" IsOverridable="true" IsLocal="true">
+          <AllowedValues />
+        </AttachedAttribute>
+        <AttachedAttribute Name="CLI Connection Type" IsOverridable="true" IsLocal="true">
+          <AllowedValues />
+        </AttachedAttribute>
       </AttachedAttributes>
       <AttributeValues>
         <AttributeValue Name="User" Value="" />
-        <AttributeValue Name="Password" Value="3M3u7nkDzxWb0aJ/IZYeWw==" />
+        <AttributeValue Name="Password" Value="" />
         <AttributeValue Name="SNMP Port" Value="161" />
         <AttributeValue Name="SNMP Read Community" Value="" />
         <AttributeValue Name="SNMP V3 Password" Value="" />
@@ -191,9 +210,11 @@
         <AttributeValue Name="Firmware Version" Value="" />
         <AttributeValue Name="Model" Value="" />
         <AttributeValue Name="Vendor" Value="" />
+        <AttributeValue Name="Sessions Concurrency Limit" Value="1" />
+        <AttributeValue Name="CLI Connection Type" Value="Auto" />
       </AttributeValues>
       <Models>
-        <ResourceModel Name="Raritan PDU" Description="" SupportsConcurrentCommands="false">
+        <ResourceModel Name="Raritan PDU" Description="" SupportsConcurrentCommands="true">
           <AttachedAttributes>
             <AttachedAttribute Name="Password" IsOverridable="true" IsLocal="true">
               <AllowedValues />
@@ -206,8 +227,8 @@
             </AttachedAttribute>
           </AttachedAttributes>
           <AttributeValues>
-            <AttributeValue Name="Password" Value="AY/mFGg7SGa5NSjbcv3sDw==" />
-            <AttributeValue Name="User" Value="admin" />
+            <AttributeValue Name="Password" Value="" />
+            <AttributeValue Name="User" Value="" />
             <AttributeValue Name="SNMP Read Community" Value="public" />
             <AttributeValue Name="SNMP Port" Value="161" />
             <AttributeValue Name="SNMP V3 Password" Value="" />

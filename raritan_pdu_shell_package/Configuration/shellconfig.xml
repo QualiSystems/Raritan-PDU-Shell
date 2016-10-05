@@ -10,19 +10,19 @@ xmlns="http://schemas.qualisystems.com/ResourceManagement/ShellsConfigurationSch
             <Description>Discovers the device structure and populate its attributes.</Description>
         </AutoLoad>
         <Attributes>
-            <Attribute Name="SNMP Version" Value="" />
+            <!--<Attribute Name="SNMP Version" Value="" />
             <Attribute Name="SNMP Read Community" Value="" />
             <Attribute Name="SNMP Write Community" Value="" />
             <Attribute Name="SNMP V3 User" Value="" />
             <Attribute Name="SNMP V3 Password" Value="" />
             <Attribute Name="SNMP V3 Private Key" Value="" />
-            <Attribute Name="CLI Connection Type" Value="Auto" />
+            <Attribute Name="CLI Connection Type" Value="Auto" />-->
             <Attribute Name="User" Value="" />
             <Attribute Name="Password" Value="" />
-			<Attribute Name="Sessions Concurrency Limit" Value="1" />
+			<!--<Attribute Name="Sessions Concurrency Limit" Value="1" />
             <Attribute Name="Firmware Version" Value=""/>
             <Attribute Name="Model" Value="" />
-            <Attribute Name="Vendor" Value="" />
+            <Attribute Name="Vendor" Value="" />-->
         </Attributes>
     </ResourceTemplate>
 </ResourceTemplates>

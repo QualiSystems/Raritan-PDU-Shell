@@ -2,14 +2,14 @@ from cloudshell.shell.core.resource_driver_interface import ResourceDriverInterf
 from cloudshell.shell.core.context_utils import context_from_args
 from cloudshell.shell.core.driver_bootstrap import DriverBootstrap
 from cloudshell.power.pdu.raritan.raritan_handler import RaritanHandler
-from cloudshell.power.pdu.power_resource_driver_interface import PowerResourceDriverInterface
 
 
-class RaritanDriver(ResourceDriverInterface, PowerResourceDriverInterface):
+class RaritanDriver(ResourceDriverInterface):
     def __init__(self):
         bootstrap = DriverBootstrap()
         bootstrap.initialize()
         self.handler = RaritanHandler()
+
 
     @context_from_args
     def initialize(self, context):
@@ -26,47 +26,35 @@ class RaritanDriver(ResourceDriverInterface, PowerResourceDriverInterface):
 
     @context_from_args
     def get_inventory(self, context):
-        """ Returns device resource, sub-resources and attributes
-
+        """
+        Return device structure with all standard attributes
+        :return: result
+        :rtype: string
         :type context: cloudshell.shell.core.driver_context.AutoLoadCommandContext
-        :rtype: cloudshell.shell.core.driver_context.AutoLoadDetails
         """
         return self.handler.get_inventory(context=context)
 
     @context_from_args
     def PowerOn(self, context, ports):
-        """ Powers on outlets on the managed PDU
-
+        """
         :type context: cloudshell.shell.core.driver_context.ResourceRemoteCommandContext
-        :param ports: full addresses of outlets on PDU, example: ['192.168.30.128/4', '192.168.30.128/6']
-        :type ports: str
-        :return: command result message
-        :rtype: str
         """
         return self.handler.power_on(context, ports)
 
     @context_from_args
     def PowerOff(self, context, ports):
-        """ Powers off outlets on the managed PDU
-
+        """
         :type context: cloudshell.shell.core.driver_context.ResourceRemoteCommandContext
-        :param ports: full addresses of outlets on PDU, example: ['192.168.30.128/4', '192.168.30.128/6']
-        :type ports: str
-        :return: command result message
-        :rtype: str
         """
         return self.handler.power_off(context, ports)
 
     @context_from_args
-    def PowerCycle(self, context, ports, delay=0):
-        """ Powers off outlets, waits during delay, then powers outlets on
-
-        :type context: cloudshell.shell.core.driver_context.ResourceRemoteCommandContext
-        :param ports: full addresses of outlets on PDU, example: ['192.168.30.128/4', '192.168.30.128/6']
-        :type ports: str
-        :param delay: seconds to wait after power off
-        :type delay: int
-        :return: command result message
-        :rtype: str
+    def PowerCycle(self, context, ports, delay):
         """
-        return self.handler.power_cycle(context, ports)
+        :type context: cloudshell.shell.core.driver_context.ResourceRemoteCommandContext
+        """
+        try:
+            float(delay)
+        except ValueError:
+            raise Exception('Delay must be a numeric value')
+        return self.handler.power_cycle(context, ports, float(delay))
